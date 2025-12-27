@@ -156,7 +156,7 @@ Output :
 
 **T H I P I R I S H E T T Y  D H A N  R A J**  
 B.Tech CSE — IIIT Dharwad  
-AI / ML • Full-Stack • Systems Engineering  
+AI / ML • Full-Stack Development
 
 📧 Email: dhanraj.t1616@gmail.com  
 🔗 GitHub: https://github.com/dhanraj1912  
