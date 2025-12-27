@@ -150,6 +150,21 @@ Output :
 <img width="1710" height="997" alt="Screenshot 2025-12-28 at 1 03 51 AM" src="https://github.com/user-attachments/assets/52d2d2e2-0f88-439d-a9f1-2062a0c8831e" />
 <img width="1710" height="997" alt="Screenshot 2025-12-28 at 1 04 05 AM" src="https://github.com/user-attachments/assets/80d673c2-22bc-400f-8a2d-d866634ff35c" />
 
+---
+
+## Author
+
+**T H I P I R I S H E T T Y  D H A N  R A J**  
+B.Tech CSE — IIIT Dharwad  
+AI / ML • Full-Stack • Systems Engineering  
+
+📧 Email: dhanraj.t1616@gmail.com  
+🔗 GitHub: https://github.com/dhanraj1912  
+
+This project was built as part of an AI Engineering assignment demonstrating
+Retrieval-Augmented Generation (RAG), vector databases, and grounded LLM systems.
+
+
 
 
 
