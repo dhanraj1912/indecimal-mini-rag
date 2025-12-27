@@ -1,4 +1,4 @@
-<img width="1710" height="997" alt="Screenshot 2025-12-28 at 1 04 05 AM" src="https://github.com/user-attachments/assets/ff1d94e7-29ab-4b65-9a71-56422ef01eed" /># 🏗️ Indecimal Mini-RAG — Construction AI Assistant
+# 🏗️ Indecimal Mini-RAG — Construction AI Assistant
 
 This project implements a Retrieval-Augmented Generation (RAG) system for Indecimal’s construction marketplace. The assistant answers user questions using only internal company documents, ensuring **accuracy**, **transparency**, and **zero hallucination**.
 
