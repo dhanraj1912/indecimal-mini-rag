@@ -3,7 +3,7 @@
 This project implements a Retrieval-Augmented Generation (RAG) system for Indecimal’s construction marketplace. The assistant answers user questions using only internal company documents, ensuring **accuracy**, **transparency**, and **zero hallucination**.
 
 A live chatbot is provided via Streamlit, backed by FAISS vector search and a local LLM (Mistral).
-
+Deployed link : https://indecimal-mini-rag-adwbb3hd3yqgfl67pv4huk.streamlit.app/
 ---
 
 ## 🎯 Objective
