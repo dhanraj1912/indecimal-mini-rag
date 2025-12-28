@@ -12,8 +12,13 @@ model = SentenceTransformer("all-MiniLM-L6-v2")
 index = faiss.read_index("vector_store/index.faiss")
 chunks = pickle.load(open("vector_store/chunks.pkl", "rb"))
 
-# OpenRouter API key
+# OpenRouter API Key
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+
+# If key is missing, stop early
+if not OPENROUTER_API_KEY:
+    st.error("OPENROUTER_API_KEY is not set in Streamlit secrets.")
+    st.stop()
 
 def ask_llm(prompt):
     headers = {
@@ -28,13 +33,28 @@ def ask_llm(prompt):
         ]
     }
 
-    res = requests.post(
-        "https://openrouter.ai/api/v1/chat/completions",
-        headers=headers,
-        json=payload
-    )
+    try:
+        res = requests.post(
+            "https://openrouter.ai/api/v1/chat/completions",
+            headers=headers,
+            json=payload,
+            timeout=60
+        )
 
-    return res.json()["choices"][0]["message"]["content"]
+        data = res.json()
+
+        # If OpenRouter returns an error
+        if "error" in data:
+            return f"OpenRouter Error: {data['error']}"
+
+        if "choices" not in data:
+            return f"Unexpected API Response: {data}"
+
+        return data["choices"][0]["message"]["content"]
+
+    except Exception as e:
+        return f"LLM call failed: {str(e)}"
+
 
 st.title("🏗 Indecimal AI Assistant")
 
